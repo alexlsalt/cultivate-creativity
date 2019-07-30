@@ -1,0 +1,299 @@
+html {
+  font-size: 16px;
+  font: 'Noto Sans JP', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 9rem;
+  color: white;
+}
+
+/* Main */
+
+.main nav {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Noto Sans JP';
+}
+
+
+.main ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.main li {
+  border: 2px solid #1e2f3f;
+  padding: 1rem;
+}
+
+.main li:hover {
+  background-color: #1e2f3f;
+}
+
+.main a {
+  color: white;
+}
+
+.main {
+  height: 35rem;
+  background-image: url('../images/banner_image3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 12.25rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .main ul {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .main li {
+    background-color: #1e2f3f;
+    margin-bottom: 1rem;
+  }
+
+  .main li:hover {
+    color: #1e2f3f;
+    background-color: white;
+    border: 2px solid #1e2f3f;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main {
+    background-image: url('../images/banner_image.png');
+  }
+
+  .main h1 {
+    font-size: 6rem;
+  }
+}
+
+/* About */
+
+.about {
+  background-color: #1e2f3f;
+  padding: 2rem 0;
+}
+
+.about h2 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  border: solid 3px white;
+}
+
+.half-highlight {
+  background-image: linear-gradient(to right, transparent 50%, #fe7e95 50%);
+  background-origin: 0;
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 0.5s;
+  background-position: -100% 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    padding-top: 7rem;
+  }
+
+  .about h2 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding-top: 4rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Boxes */
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url('../images/dark_leaves.jpg');
+}
+
+.box {
+  width: 30%;
+}
+
+.box img {
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fe7e95;
+  border: 2px solid white;
+  padding: 1rem;
+  text-align: center;
+  height: 13rem;
+}
+
+.description h3 {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #1e2f3f;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.description span {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+}
+
+.description a {
+  font-size: 1.5rem;
+  color: #1e2f3f;
+  font-style: italic;
+}
+
+.description a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+  .box {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .boxes {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .box img {
+    width: 99%;
+    text-align: center;
+    margin-bottom: 0;
+    border: 2px solid #fe7e95;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 80%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 13rem;
+  background-color: #1e2f3f;
+  padding-top: 3rem;
+}
+
+footer h3 {
+  color: white;
+  font-family: 'DM Serif Display';
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.slogan {
+  text-align: center;
+}
+
+footer nav {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Noto Sans JP';
+  margin-top: 2rem;
+}
+
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer li {
+  border: 1px solid #fe7e95;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+footer li:hover {
+  background-image: linear-gradient(to top, transparent 50%, #fe7e95 50%);
+  background-origin: 0;
+  background-size: 200% 70%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 0.7s;
+  background-position: -100% 100%;
+}
+
+footer a {
+  color: #1e2f3f;
+}
+
+footer span {
+  background-color: #1e2f3f;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
