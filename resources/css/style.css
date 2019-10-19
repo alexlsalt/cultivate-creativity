@@ -297,3 +297,7 @@ footer span {
   padding-top: 3rem;
   padding-bottom: 0.5rem;
 }
+
+footer a {
+  color: #fe7e95;
+}
